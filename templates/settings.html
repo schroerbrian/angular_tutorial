@@ -1,0 +1,56 @@
+<div>
+  <h1>Update your settings</h1>
+  <form name="form">
+    <fieldset>
+      <legend>Update settings</legend>  
+
+      <div class="row">
+        <div class="small-8 columns">
+          <label>Name</label>
+          <input type="text" placeholder="Name" name="name" 
+          ng-model="settings.name" ng-minlength=3 ng-maxlength=20 
+          ng-pattern="/^[a-zA-Z]+/" required>
+          <div ng-show="form.name.$dirty && form.name.$invalid">
+            <div ng-show="form.name.$error.required">
+              Please enter a username.
+            </div>
+            <div ng-show="form.name.$error.minlength">
+              Your username must have more than two characters.
+            </div>
+            <div ng-show="form.name.$error.maxlength">
+              Your username must have less than thirty characters.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="small-8 columns">
+          <label>Email</label>
+          <input type="email" placeholder="Email" name="email" 
+          ng-model="settings.email" />
+          <div ng-show="form.email.$dirty && form.email.$invalid">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="small-8 columns">
+          <label>Age</label>
+          <input type="number" placeholder="Age" name="age" 
+          ng-model="settings.age" />
+          </div>
+      </div>
+      
+      <div class="row">
+        <div class="push-9 small-3">
+          <button type="submit" class="button">Update</button>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+
+{{settings}} 

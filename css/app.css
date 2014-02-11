@@ -1,36 +1,26 @@
-body {
+.ng-pristine { border: solid 1px #2ecc40; }
+.ng-dirty { border: solid 1px #ff4136; }
+.ng-invalid.ng-dirty { 
+  color: #FF4136; 
+  border: #FF4136;
 }
 
-ul {
-  
+.ng-valid.ng-dirty { border: solid 1px #2ecc40; }
+input.ng-invalid-minlength.ng-dirty { border: 1px solid red; }
+
+#sidebar {
+  clear: left;
+  float: left;
+  min-height: 300px;
+  width: 228px;
+  position: relative;
+  z-index: 1;
 }
-ul li {
-  list-style-type: none;
-}
-ul li:hover {
-  background: #eee;
-}
-#accountlisting {
-  background: #999;
-  -moz-border-radius: 15px;
-  border-radius: 3px;
-}
-.top-bar {
-  color: #000;
-}
-.top-bar .name h1 a {
-  color: #111;
-}
-.spinner {
-  height: 25px;
-  width: 25px;
-}
+
 #emailListing {
   margin-top: 20px;
   overflow-y: scroll;
   overflow-x: hidden;
-}
-#email {
 }
 .emailListing {
   border-radius: 3px;
@@ -49,20 +39,9 @@ ul li:hover {
 .emailListing .subject {
   font-size: 0.8em;
 }
-#sidebar .selected {
-  background: #bbb;
+.emailListing:hover {
+  background-color: #eee;
 }
-.email {
-  margin-left: 20px;
-}
-.email .header {
-  background: #eee;
-  padding: 10px;
-}
-.email .actions {
-  padding: 5px 0;
-}
-.email .body {
-  padding: 10px 0;
-  border-top: 1px solid #999;
+#emailListing .selected {
+  background-color: #bbb;
 }

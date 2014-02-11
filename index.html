@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Demo app</title>
+  <title>Simple app</title>
   
   <link rel="stylesheet" href="css/foundation.min.css" />
   <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/brians_css.css" />
 </head>
 <body>
+
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a>Mail</a></h1>
+      </li>
+    </ul>
+
+    <section class="top-bar-section">
+      <ul class="right">
+        <li><a href="#/"><img src="images/home.gif"></a></li>
+        <li><a href="#/settings"><img src="images/settings.gif"></a></li>
+      </ul>
+    </section>
+  </nav>
   
+  <div ng-view></div>
+
   <script src="js/vendor/angular.min.js"></script>
   <script src="js/main.js"></script>
 </body>
