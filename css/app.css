@@ -1,13 +1,13 @@
-.ng-pristine { border: solid 1px #2ecc40; }
-.ng-dirty { border: solid 1px #ff4136; }
-.ng-invalid.ng-dirty { 
+/*.ng-pristine { border: solid 1px #2ecc40; }*/
+/*.ng-dirty { border: solid 1px #ff4136; }*/
+/*.ng-invalid.ng-dirty { 
   color: #FF4136; 
   border: #FF4136;
-}
+}*/
 
-.ng-valid.ng-dirty { border: solid 1px #2ecc40; }
+/*.ng-valid.ng-dirty { border: solid 1px #2ecc40; }
 input.ng-invalid-minlength.ng-dirty { border: 1px solid red; }
-
+*/
 #sidebar {
   clear: left;
   float: left;

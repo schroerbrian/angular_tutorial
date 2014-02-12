@@ -11,4 +11,9 @@ class App < Sinatra::Base
   get '/api/:p' do
     File.read(File.expand_path('data/' + params['p'] + '.json', File.dirname(__FILE__)))
   end
+
+  post '/api/send' do
+    sleep 3
+    {result: 'true'}.to_json
+  end 
 end
