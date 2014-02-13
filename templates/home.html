@@ -1,7 +1,7 @@
 <div class="small-4 columns" ng-controller="MailListingController">
-  <input type="number" placeholder="Filter by years" ng-model="nYearsAgo">
+  <input type="search" placeholder="Filter messages" ng-model="search.$">
   <ul id="emailListing">
-    <li email-listing email="mail" action="setSelectedMail(selectedMail)" ng-repeat="mail in (email | orderBy:'sent_at':true | filter:searchPastNYears )">
+    <li email-listing email="mail" gravatar-size="20" action="setSelectedMail(selectedMail)" ng-repeat="mail in (email | orderBy:'sent_at':true | filter:search )">
     </li> 
   </ul>
 </div>
